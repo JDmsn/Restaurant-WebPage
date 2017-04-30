@@ -1,0 +1,52 @@
+.foodTable{
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableSection{
+	padding: 1.5em 2em 1.5em 2em;
+    overflow-x: auto;
+}
+
+.foodTable th{
+	padding: 0.4em;
+	background-color: #d35400;
+	color:white;
+}
+
+
+.foodTable tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.foodTable tr:nth-child(odd) {
+	background-color: white;
+}
+
+.foodTable td{
+	padding-left:1em;
+}
+
+.foodTable .photo img{
+	width: 4em;
+	
+}
+
+.foodTable a{
+	color: #b33400;
+}
+
+.foodTable a:hover{
+	color: #f36400;
+}
+
+.foodTable tr > td,
+.foodTable tr > th{
+	border-left: groove medium rgba(0,0,0,0.2);
+}
+
+.foodTable tr > th:first-child,
+.foodTable tr > td:first-child{
+	border-left: none;
+}

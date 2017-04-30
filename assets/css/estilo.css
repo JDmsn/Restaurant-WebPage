@@ -1,0 +1,328 @@
+@media print{
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    
+	height: 100%;
+	box-sizing: border-box;
+}
+
+}
+
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 2.25em;
+    background-color: #222;
+    box-shadow: inset 0 -0.25em 1em rgba(0,0,0,0.5);
+    z-index: 12;
+    font-weight: bold;
+    padding-top: 0.75em;
+}
+
+nav > .menuItem{
+    display: inline;
+    margin-left: 2em;
+    cursor: pointer;
+    color: lightgray;
+    text-decoration: none;
+}
+
+nav > .menuItem:hover{
+    color:white;
+}
+
+nav input[type=text]{
+    border: none;
+    border-radius: 0.2em;
+}
+
+@media screen{
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-image: url("../img/wood.jpg");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    
+	height: 100%;
+	box-sizing: border-box;
+}
+
+}
+.wrapper{
+	min-height: 85vh;
+	position: relative;
+	margin:0;
+	width:100%;
+	padding-bottom: 15vh;
+}
+
+@media screen{
+header{
+    top:0;
+    left:0;
+    right:0;
+    
+    
+    background-image: url("../img/restaurante.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 13em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 2em;
+    text-align: right;
+    box-shadow: 0 0.2em 2em black;
+}
+
+header h1{
+	color: white;
+	text-shadow: 0 0 4px black;
+}
+
+}
+
+@media print{
+header{
+    top:0;
+    left:0;
+    right:0;
+    
+    
+    background-image: url("../img/restaurante.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    padding-top: 10em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-bottom: 2em;
+    text-align: right;
+    color: black;
+}
+
+header h1{
+	color: black;
+}
+
+}
+
+h2{
+	margin:0;
+}
+
+header h1::before{
+	content: " ";
+	position: absolute;
+	background-image: url("../img/pancracio.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  	float: right;
+    width: 3em;
+    height: 3em;
+    transform: translate(-3.5em, -1em);
+}
+
+@media screen 
+and (max-width : 750px){
+main{
+    background-color: rgb(255,255,240);
+}
+
+article .content{
+	clear: both;
+}
+}
+
+
+article .content h2::first-letter{
+	font-size: 1.3em;
+}
+
+article .content h2{
+	color: #411;
+}
+
+@media screen 
+and (min-width : 750px){
+main{
+	border-radius: 0.3em;
+    margin-left: 5em;
+    margin-right: 5em;
+    background-color: rgb(255,255,240);
+    box-shadow: 0.3em 0.3em 2em black;
+}
+}
+
+@media print{
+main{
+    margin: 0;
+}
+    
+}
+article{
+    top:0;
+    left:0;
+    right:0;
+    min-height: 30vh;
+}
+
+article .content:not(:first-child){
+    padding-top: 1.5em;
+}
+
+.imgShowcase{
+    width: auto;
+    height: 30vh;
+    margin: 1em;
+    border: 1em solid white;
+    box-shadow: 0 0 2px black;
+    max-height: 25vh;
+}
+
+article.left img{
+    float: left;
+    display: block;
+    transform: rotate(-3deg);
+}
+
+article.right img{
+    float: right;
+    display: block;
+    transform: rotate(3deg);
+}
+
+article{
+	padding: 2em;
+}
+
+article.left{
+    text-align: left;
+}
+
+article.right{
+    text-align: right;
+}
+
+.left .description .button{
+	margin-right:6%;
+	margin-left:auto;
+}
+
+.right .description .button{
+	margin-right:auto;
+	margin-left:6%;
+}
+
+.button{
+	text-decoration: none;
+	color: inherit;
+	max-width: 15em;
+	text-align: center;
+} 
+
+.button,
+button{
+	display: block;
+	margin-top: 2em;
+	background-color: #3498db;		
+	color: #ecf0f1;
+	border: solid medium #2980b9;
+	border-radius: 0.2em;
+	padding: 0.3em;
+	cursor: pointer;
+}
+
+button{
+    display: inline;
+    margin: 0.5em;
+}
+
+.button:hover,
+button:hover{
+	background-color: #2488cb;
+	border: solid medium #096099;
+	color: white;
+}
+
+.button:disabled,
+button:disabled{
+    background-color: #34495e;
+    border: solid medium #2c3e50;
+    cursor: default;
+}
+
+nav #searchIt{
+    display: inline;
+    margin-top: -1em;
+    margin-right: 1em;
+    padding: 0.2em;
+}
+
+.tableComand h1{
+    display: inline;
+    margin-top: 0.25em;
+}
+
+.price::after {
+    content: "€";
+    margin-right: 1em;
+    padding-left: 0.5em;
+}
+.price {
+    text-align: right;
+}
+
+@media print{
+footer{
+	bottom: 0;
+	width: 100%;
+	margin-top: 3em;
+	background-color: white;
+	padding-top:2.75em;
+	padding-bottom:1.75em;
+	font-size: 0.75em;
+	text-align: center;
+	color: black;
+}
+    
+footer a{
+	color: black;
+}
+
+}
+
+
+@media screen{
+footer{
+	bottom:0;
+	position: absolute;
+	width: 100%;
+	margin-top: 3em;
+	background-color: rgba(0,0,0,0.8);
+	padding-top:2.75em;
+	padding-bottom:1.75em;
+	font-size: 0.75em;
+	text-align: center;
+	color: white;
+}
+
+    
+footer a{
+	color: white;
+}
+
+
+}
